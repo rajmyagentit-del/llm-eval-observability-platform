@@ -21,13 +21,20 @@ dev = [
     "ruff>=0.6",
     "mypy>=1.10",
 ]
+local-model = [
+    "transformers>=4.40",
+    "torch>=2.2",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/llm_eval"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra"
+addopts = "-ra -m 'not integration'"
+markers = [
+    "integration: tests that need heavier optional dependencies or a downloaded model; excluded by default, run explicitly with -m integration.",
+]
 
 [tool.ruff]
 line-length = 100
