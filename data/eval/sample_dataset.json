@@ -1,0 +1,42 @@
+{
+  "name": "sample_qa",
+  "version": "v1",
+  "examples": [
+    {
+      "id": "qa_001",
+      "question": "What is the time complexity of binary search on a sorted array of size n?",
+      "reference_answer": "O(log n)",
+      "category": "factual"
+    },
+    {
+      "id": "qa_002",
+      "question": "Explain in one sentence why cross-validation is used in machine learning.",
+      "reference_answer": "Cross-validation estimates how well a model generalizes to unseen data by training and evaluating it across multiple different train/validation splits.",
+      "category": "reasoning"
+    },
+    {
+      "id": "qa_003",
+      "question": "What does the acronym RAG stand for in the context of large language models?",
+      "reference_answer": "Retrieval-Augmented Generation.",
+      "category": "factual"
+    },
+    {
+      "id": "qa_004",
+      "question": "If a model achieves 92% accuracy on a dataset where 90% of labels belong to one class, is accuracy alone a reliable metric? Explain briefly.",
+      "reference_answer": "No. A model that always predicts the majority class would already reach 90% accuracy, so 92% may reflect little real skill; per-class precision, recall, or F1 should be used instead.",
+      "category": "reasoning"
+    },
+    {
+      "id": "qa_005",
+      "question": "What HTTP status code should a REST API return when a resource is successfully created?",
+      "reference_answer": "201 Created.",
+      "category": "factual"
+    },
+    {
+      "id": "qa_006",
+      "question": "What is the primary difference between p50 and p95 latency?",
+      "reference_answer": "p50 (median) latency is the value below which half of requests fall, representing typical performance. p95 latency is the value below which 95% of requests fall, capturing near-worst-case performance and revealing tail-latency issues the median hides.",
+      "category": "reasoning"
+    }
+  ]
+}
