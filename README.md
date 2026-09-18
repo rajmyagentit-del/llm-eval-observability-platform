@@ -50,9 +50,9 @@ This is the target design. Components are built incrementally, and this README i
 |---|---|
 | Repository, devcontainer, Python packaging | Done |
 | CI (lint + test on push/PR) | Done |
-| Evaluation dataset & schemas | Not started |
+| Evaluation dataset & schemas | Done |
 | Model provider abstraction | Done (mock + local transformers) |
-| Evaluation engine | Not started |
+| Evaluation engine | Done (deterministic + semantic + LLM-judge) |
 | RAG system + RAG evaluation | Not started |
 | Experiment tracking | Not started |
 | Observability/tracing | Not started |
