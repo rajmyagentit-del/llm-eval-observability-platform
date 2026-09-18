@@ -54,7 +54,7 @@ This is the target design. Components are built incrementally, and this README i
 | Model provider abstraction | Done (mock + local transformers) |
 | Evaluation engine | Done (deterministic + semantic + LLM-judge) |
 | RAG system + RAG evaluation | Not started |
-| Experiment tracking | Not started |
+| Experiment tracking | Done (prompt versioning + JSON-based run tracking) |
 | Observability/tracing | Not started |
 | Regression detection | Not started |
 | FastAPI service | Not started |

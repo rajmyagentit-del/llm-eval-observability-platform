@@ -20,3 +20,5 @@ mlruns/
 *.sqlite3
 
 .DS_Store
+
+reports/experiments/

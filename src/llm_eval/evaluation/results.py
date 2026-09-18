@@ -4,6 +4,10 @@ Kept separate from EvalExample (Phase 1) deliberately: EvalExample is the
 static ground truth, EvalResult is the runtime output of running something
 against it. Retrieval fields are included now (empty by default) so this
 schema doesn't need to change shape when the RAG system arrives in Phase 5.
+
+prompt_id/prompt_version (Phase 4) are tracked as their own fields, separate
+from model/model version, so a later regression check can isolate whether a
+quality change came from the prompt or from something else.
 """
 
 from __future__ import annotations
@@ -23,6 +27,8 @@ class EvalResult(BaseModel):
     generated_answer: str
     model: str
     provider: str
+    prompt_id: str = "qa_direct"
+    prompt_version: str = "v1"
     prompt_tokens: int
     completion_tokens: int
     latency_ms: float
